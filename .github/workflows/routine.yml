@@ -64,11 +64,11 @@ env:
   UPLOAD_TAG_NAME: rax3000m-emmc
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
-  FEEDS_CONF: RAX3000M-EMMC/feeds.conf.default
+  FEEDS_CONF: use/feeds.conf.default
   RAX3000M_EMMC_DTS_FILE: target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-cmcc-rax3000m-emmc.dts
-  CONFIG_FILE: RAX3000M-EMMC/.mtwifi-cfg.config
-  DIY_P1_SH: RAX3000M-EMMC/diy-part1.sh
-  DIY_P2_SH: RAX3000M-EMMC/diy-part2.sh
+  CONFIG_FILE: routine/.config
+  DIY_P1_SH: routine/diy-part1.sh
+  DIY_P2_SH: routine/diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -180,7 +180,7 @@ jobs:
                 fi
         else
                 if [ "$firmware" != "default" ]; then
-                        cp $GITHUB_WORKSPACE/RAX3000M-EMMC/mt79xx_20231229-4012a0_mt7981-fw-20240823.tar.xz dl/mt79xx_20231229-4012a0.tar.xz
+                        cp $GITHUB_WORKSPACE/use/mt79xx_20231229-4012a0_mt7981-fw-20240823.tar.xz dl/mt79xx_20231229-4012a0.tar.xz
                 fi
         fi
         echo "Use WiFi Driver: $wifi_driver-fw-$firmware"
@@ -192,12 +192,12 @@ jobs:
         wifi_driver=$(echo "${{ github.event.inputs.WIFI_DRIVER }}" | sed -E 's/^(v[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\1/')
         firmware=$(echo "${{ github.event.inputs.WIFI_DRIVER }}" | sed -E 's/^.*-fw-([0-9]{8}).*/\1/')
         if [ "$wifi_driver" == "v7.6.6.1" ]; then
-                cp $GITHUB_WORKSPACE/RAX3000M-EMMC/nx30pro_eeprom.bin package/mtk/drivers/mt_wifi/files-7661/bin/mt7981/rebb/MT7981_iPAiLNA_EEPROM.bin
+                cp $GITHUB_WORKSPACE/use/nx30pro_eeprom.bin package/mtk/drivers/mt_wifi/files-7661/bin/mt7981/rebb/MT7981_iPAiLNA_EEPROM.bin
         else
                 if [ "$firmware" != "default" ]; then
-                        cp $GITHUB_WORKSPACE/RAX3000M-EMMC/mt79xx_20231229-4012a0_mt7981-fw-20240823_eeprom.tar.xz dl/mt79xx_20231229-4012a0.tar.xz
+                        cp $GITHUB_WORKSPACE/use/mt79xx_20231229-4012a0_mt7981-fw-20240823_eeprom.tar.xz dl/mt79xx_20231229-4012a0.tar.xz
                 else                
-                        cp $GITHUB_WORKSPACE/RAX3000M-EMMC/mt79xx_20231229-4012a0_eeprom.tar.xz dl/mt79xx_20231229-4012a0.tar.xz
+                        cp $GITHUB_WORKSPACE/use/mt79xx_20231229-4012a0_eeprom.tar.xz dl/mt79xx_20231229-4012a0.tar.xz
                 fi
         fi
         ## 创建一个辅助文件。文件内容是写入MAC地址到dat文件，固定wifi MAC地址
