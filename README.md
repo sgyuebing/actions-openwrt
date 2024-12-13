@@ -21,6 +21,11 @@
 - -------
 ## 适合的U-boot
 - https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8328967
+## 历史云编译
+- 闲来无事瞎几把整
+https://github.com/alneflibata/actions-openwrt/releases/tag/5G25db
+https://github.com/alneflibata/actions-openwrt/releases/tag/routine
+https://github.com/alneflibata/actions-openwrt/releases/tag/ssr%2Bpasswall%2Bopenclash
 ## 237大佬编译的固件
 - 2024/4/12
 https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240412
@@ -36,4 +41,5 @@ https://github.com/alneflibata/actions-openwrt/releases/tag/237-20242002
 ## 其他资源汇总（瞎整）
 - https://www.yuque.com/yuqueyonghullvctc/lddvzm/cwqxrg9zh55k4ri5
 ## alist for openwrt（a53&a55)密码:i4el
-- https://along123.lanzouv.com/b0hciixcb
+https://along123.lanzouv.com/b0hciixcb
+https://github.com/alneflibata/actions-openwrt/releases/tag/package
