@@ -45,6 +45,7 @@ https://github.com/alneflibata/actions-openwrt/releases/tag/237-20242002
 https://www.yuque.com/yuqueyonghullvctc/lddvzm/cwqxrg9zh55k4ri5
 ## alist for openwrt
 - 蓝奏云
-https://along123.lanzouv.com/b0hciixcb（a53&a55)密码:i4el
+https://along123.lanzouv.com/b0hciixcb
+（a53&a55)密码:i4el
 - release
 https://github.com/alneflibata/actions-openwrt/releases/tag/package
