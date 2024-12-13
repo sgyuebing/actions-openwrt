@@ -40,6 +40,8 @@ https://github.com/alneflibata/actions-openwrt/releases/tag/237-20242002
 - -------
 ## 其他资源汇总（瞎整）
 - https://www.yuque.com/yuqueyonghullvctc/lddvzm/cwqxrg9zh55k4ri5
-## alist for openwrt（a53&a55)密码:i4el
-https://along123.lanzouv.com/b0hciixcb
+## alist for openwrt
+- 
+https://along123.lanzouv.com/b0hciixcb（a53&a55)密码:i4el
+- 
 https://github.com/alneflibata/actions-openwrt/releases/tag/package
