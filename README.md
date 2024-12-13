@@ -21,6 +21,17 @@
 - -------
 ## 适合的U-boot
 - https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8328967
+## 237大佬编译的固件
+- 2024/4/12
+https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240412
+- 2024/4/15
+https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240415
+- 2024/8/1
+https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240801
+- 2024/9/9
+https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240909
+- 2024/10/2
+https://github.com/alneflibata/actions-openwrt/releases/tag/237-20242002
 - -------
 ## 其他资源汇总（瞎整）
 - https://www.yuque.com/yuqueyonghullvctc/lddvzm/cwqxrg9zh55k4ri5
