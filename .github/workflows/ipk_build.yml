@@ -6,7 +6,7 @@ on:
         required: true
         type: choice
         options:
-        - RAX3000M
+        - RAX3000M-EMMC
       sourcecode:
         description: 'Source code URL'     
         required: true
@@ -27,7 +27,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: 开始构建
+    - name: build ipk
       id: build
       env:
         SOURCECODEURL: ${{ github.event.inputs.sourcecode }}
