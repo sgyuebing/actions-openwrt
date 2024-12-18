@@ -2,7 +2,7 @@
 echo SOURCECODEURL: "$SOURCECODEURL"
 echo PKGNAME: "$PKGNAME"
 echo BOARD: "$BOARD"
-EMAIL=${EMAIL:-"aa@gmail.com"}
+EMAIL=${EMAIL:-"aa@163.com"}
 echo EMAIL: "$EMAIL"
 echo PASSWORD: "$PASSWORD"
 
@@ -20,19 +20,20 @@ cd  ${WORKDIR}/buildsource
 git clone "$SOURCECODEURL"
 cd  ${WORKDIR}
 
-
 mt7981_sdk_get()
 {
 	 git clone https://github.com/hanwckf/immortalwrt-mt798x.git  openwrt-sdk
 }
 
+
 case "$BOARD" in
-       ;;
-       "RAX3000M-EMMC" |\
-       "RAX3000M-NAND" )
-		      mt7981_sdk_get
-       ;;
-       *)
+
+	;;
+	"MT3000" |\
+	"MT2500" )
+		mt7981_sdk_get
+	;;
+	*)
 esac
 
 cd openwrt-sdk
