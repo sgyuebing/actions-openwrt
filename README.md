@@ -2,13 +2,13 @@
 ## 本脚本来源于lgs2007m二次修改
 - https://github.com/lgs2007m/Actions-OpenWrt
 - -------
-- 精简版和常规版默认加入了4g25db,5g24db-eeprom,[simplify-25db默认编译双频25db-eeprom（测试中勿编译）]，如无需要请在运行工作流时取消勾选‘Use nx30pro eeprom and fixed WiFi MAC address’
+- 精简版和常规版默认加入了4g25db,5g24db-eeprom,simplify-25db默认编译双频25db-eeprom，如无需要请在运行工作流时取消勾选‘Use nx30pro eeprom and fixed WiFi MAC address’
 - 默认编译dockerman，如无需要请在运行工作流时勾选“Not build luci-app-dockerman”
 - 插件尽量不要加的太多，可能编译超时导致失败，我的建议是加入istore商店和一些其他插件，刷机以后去软件包/商店下载安装/使用.run（尽量不要编译网易云解灰/alist，大概率超时）
 - part1已经添加了自用的几个插件地址，按需增减
 - simplify为精简版
 - routine为常规版
-- simplify-25db为双频25db精简版（测试中...)
+- simplify-25db为双频25db精简版
 - -------
 ## 感谢p大的云编译项目
 - https://p3terx.com/archives/build-openwrt-with-github-actions.html
