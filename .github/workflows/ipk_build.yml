@@ -6,7 +6,8 @@ on:
         required: true
         type: choice
         options:
-        - RAX3000M-EMMC
+        - MT2500
+        - MT3000
       sourcecode:
         description: 'Source code URL'     
         required: true
