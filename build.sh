@@ -26,13 +26,13 @@ mt7981_sdk_get()
 	 git clone https://github.com/hanwckf/immortalwrt-mt798x.git  openwrt-sdk
 }
 
-
+case "$BOARD" in
 	;;
-	"RAX3000M-EMMC" |\
-	"RAX3000M-NAND" )
-		mt7981_sdk_get
-	;;
-	*)
+       "RAX3000M-EMMC" |\
+       "RAX3000M-NAND" )
+		      mt7981_sdk_get
+       ;;
+       *)
 esac
 
 cd openwrt-sdk
