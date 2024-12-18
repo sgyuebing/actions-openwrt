@@ -27,7 +27,7 @@ mt7981_sdk_get()
 }
 
 case "$BOARD" in
-	;;
+       ;;
        "RAX3000M-EMMC" |\
        "RAX3000M-NAND" )
 		      mt7981_sdk_get
