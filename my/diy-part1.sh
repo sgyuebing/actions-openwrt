@@ -31,7 +31,7 @@ git clone https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 git clone https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 
 # alist文件列表
-git clone https://github.com/sbwml/luci-app-alist package/luci-app-alist
+#git clone https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
 # MosDns
 git clone https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
