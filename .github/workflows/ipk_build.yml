@@ -51,17 +51,14 @@ jobs:
         path: |
           ./*ipk*
 
-    - name: 生成固件Release标签
-      id: tag
-      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-
-    - name: 发布固件至Release
-      uses: softprops/action-gh-release@v2
-      if: steps.tag.outputs.status == 'success' && !cancelled()
+    - name: Upload firmware to release
+      uses: softprops/action-gh-release@v2.1.0
+      if: ${{ env.PACKAGED_STATUS == 'success' }} && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        files: ${{ env.FIRMWARE }}/*
-        name: ${{ env.IPK_NAME }}
-        tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: release.txt
+        tag_name: ipk_${{ env.PACKAGED_OUTPUTDATE }}
+        files: ${{ env.PACKAGED_OUTPUTPATH }}/*.img.xz
+        body: |
+          解压使用
+          * 基本信息
