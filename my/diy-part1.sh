@@ -25,8 +25,8 @@ git clone https://github.com/linkease/istore-ui package/istore-ui
 git clone https://github.com/linkease/istore package/istore
 
 # 主题皮肤
-git clone https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
-git clone https://github.com/derisamedia/luci-theme-alpha package/luci-theme-alpha
+#git clone https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+#git clone https://github.com/derisamedia/luci-theme-alpha package/luci-theme-alpha
 
 # 集客AC控制器
 git clone https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
