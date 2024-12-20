@@ -50,15 +50,3 @@ jobs:
         name: ${{ github.event.inputs.pkgname }}_related_ipks
         path: |
           ./*ipk*
-
-    - name: Upload firmware to release
-      uses: softprops/action-gh-release@v2.1.0
-      if: ${{ env.PACKAGED_STATUS == 'success' }} && !cancelled()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ipk_${{ env.PACKAGED_OUTPUTDATE }}
-        files: ${{ env.PACKAGED_OUTPUTPATH }}/*.img.xz
-        body: |
-          解压使用
-          * 基本信息
