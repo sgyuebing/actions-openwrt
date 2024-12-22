@@ -2,3 +2,75 @@ istore软件包
 https://github.com/AUK9527/Are-u-ok/tree/main/apps
 云编译mt798x闭源固件
 https://github.com/VIKINGYFY/CloseWRT-CI
+-------------
+语雀文档
+本内容由coolapk@desempregados编辑整理http://www.coolapk.com/u/2393326
+[X] 固件作者
+● immortalwrt_official(后台地址immortalwrt.lan)
+ImmortalWrt-official在线编译
+● 237176253(后台地址192.168.6.1)
+237176253恩山主页
+GitHub - padavanonly/immortalwrt-mt798x
+237-immortalwrt23.05源码
+● 2024/4/12密码8k8p
+● https://sssddddff.lanzoup.com/b019tameb
+更新内容：貌似存在docker/精简/istore首页
+● 2024/4/15密码9gqe
+● https://sssddddff.lanzouo.com/b01a36x3c
+更新内容：TP-FW驱动
+● 2024/8/2密码74jb
+● https://sssddddff.lanzouo.com/b0kn9xw2f
+更新内容：5G-25DB
+● 2024/9/9密码8hvu
+● https://sssddddff.lanzouo.com/b0kndecsb
+修复已知bug
+● 2024/9/18密码8vkg
+● https://sssddddff.lanzouo.com/b0knegtng
+更新内容：切换至DSA架构
+● 2024/9/30密码8vkg
+● https://sssddddff.lanzouo.com/b0knegtng
+更新内容：切换至23.05版本，闭原驱动相关加速特性仍然保留。要增大5g无线功率到     25dbm的，ssh运行以下命令后重启。确保自己电源功率足够，否则可能不稳定。
+printf '\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B\x2B' > /tmp/tmp.bin && dd if=/tmp/tmp.bin of=/lib/firmware/MT7981_iPAiLNA_EEPROM.bin bs=1 seek=$((0x445)) conv=notrunc
+● hanwckf(后台地址192.168.1.1)
+hanwckf恩山主页
+hanwckf-immortalwrt源码
+hanwck博客
+● lean/lede(后台地址192.168.1.1)
+lean恩山主页
+lede源码
+● othe
+● Lgs2007m
+lgs2007m的云编译地址
+● 云编译闭源固件(每天凌晨四点自动编译)
+云编译hanwckf21.02/237-21.02/237-23.05多种源码固件，几乎包含了全部可刷的798x路由
+●  Angelacooljx(未使用)
+       云编译rax3000m-emmc高功率闭源固件
+● 小鲸社长rax3000m_emmc(未使用，不推荐)
+百度网盘
+● 云编译脚本(上传配置文件到项目，修改源码分支即可自动编译)
+GitHub Actions 在线云编译 OpenWrt 固件 - P3TERX ZONE
+[X] (后台地址192.168.1.1)
+● 798x全系自动下发DHCP(rest键)
+● https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8328967
+● RAX3000M_NAND中文版Uboot(mesh键)
+● https://share.weiyun.com/WC6WFaUh
+● RAX3000M_EMMC中文版Uboot(mesh键)
+● https://share.weiyun.com/JUWyEyo4
+[X] 刷机教程整合
+https://blog.codee.top/rax3000m%E6%90%9E%E6%9C%BA%E7%9B%AE%E5%BD%95/
+RAX3000M开启ssh以及刷uboot和刷机教程-OPENWRT专版-恩山无线论坛
+RAX3000M 路由器刷机详解：保姆教程，轻松上手_路由器_什么值得买
+MediaTek Filogic 系列路由器串口救砖教程 - 暗云 - 博客园
+● 一些其他
+自解压插件包，一键安装插件省时省力
+https://github.com/AUK9527/Are-u-ok/tree/main/apps
+
+● alist密码问题
+ssh连接至路由器执行以下命令即可输出默认密码
+/usr/bin/alist --data /etc/alist admin set admin
+● samba4增加用户名密码
+编辑模板注释掉nvalid users = root为#nvalid users = root然后执行以下命令增加用户修改密码
+useradd -M xx(此条命令为增加用户xx，输入报错的话可能是没有安装useradd插件，手动去软件包搜索安装即可)
+smbpasswd -a xx(此条xx的用户名设置密码)
+● ttyd终端因修改lanip导致连接不上
+OPENWrt无法访问TTYD终端，提示192.168.XX.XX拒绝了我们的连接请求 - 大侠阿木博客
