@@ -37,6 +37,8 @@ https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240415
 https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240801
 - 2024/9/9
 https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240909
+- 2024/9/18
+https://github.com/alneflibata/actions-openwrt/releases/tag/237-20240918
 - 2024/10/2
 https://github.com/alneflibata/actions-openwrt/releases/tag/237-20242002
 - -------
