@@ -7,11 +7,8 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
 #
-###############手动修改##############
-name: simplify21.02(hanwckf)
 
-permissions: write-all
-# 开启写权限，防止无法上传到release
+name:  XR30
 
 on:
   repository_dispatch:
