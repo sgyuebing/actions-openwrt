@@ -19,6 +19,11 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #git clone https://github.com/messense/aliyundrive-webdav package/messense
+sed -i '$a src-git mmdvm https://github.com/qzyuebing/mmdvm-openwrt' feeds.conf.default
+#sed -i '$a src-git mmdvm https://github.com/lazywalker/mmdvm-openwrt' feeds.conf.default
+sed -i '$a src-git pptp https://github.com/qzyuebing/luci-app-pptp-server' feeds.conf.default
+
+
 
 # 应用过滤
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
